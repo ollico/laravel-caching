@@ -1,0 +1,59 @@
+{
+    "name": "ollico/laravel-caching",
+    "description": "A simple caching manager for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "David Bonner",
+        "email": "david@ollicosoftware.com"
+      }
+    ],
+    "require": {
+      "php": "^8.1",
+      "spatie/laravel-package-tools": "^1.13.0",
+      "illuminate/contracts": "^9.0"
+    },
+    "require-dev": {
+      "laravel/pint": "^1.0",
+      "nunomaduro/collision": "^6.0",
+      "nunomaduro/larastan": "^2.0.1",
+      "orchestra/testbench": "^7.0",
+      "phpstan/extension-installer": "^1.1",
+      "phpstan/phpstan-deprecation-rules": "^1.0",
+      "phpstan/phpstan-phpunit": "^1.0",
+      "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+      "analyse": "vendor/bin/phpstan analyse",
+      "format": "vendor/bin/pint"
+    },
+    "config": {
+      "sort-packages": true,
+      "allow-plugins": {
+        "phpstan/extension-installer": true
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Ollico\\Caching\\ServiceProvider"
+        ],
+        "aliases": {
+          "Caching": "Ollico\\Caching\\Facades\\Caching"
+        }
+      }
+    },
+    "autoload": {
+      "psr-4": {
+        "Ollico\\Caching\\": "src"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Ollico\\Caching\\Tests\\": "tests"
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+  }
