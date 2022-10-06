@@ -37,7 +37,7 @@
     "extra": {
       "laravel": {
         "providers": [
-          "Ollico\\Caching\\ServiceProvider"
+          "Ollico\\Caching\\LaravelCachingServiceProvider"
         ],
         "aliases": {
           "Caching": "Ollico\\Caching\\Facades\\Caching"
