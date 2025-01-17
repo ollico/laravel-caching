@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-caching` will be documented in this file.
 
+## v2.1.0 - 2025-01-17
+
+**Full Changelog**: https://github.com/ollico/laravel-caching/compare/v2.0.0...v2.1.0
+
 ## v2.0.0 - 2024-02-01
 
 ### What's Changed
