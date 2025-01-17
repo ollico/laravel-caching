@@ -20,7 +20,7 @@ class CachingManager
 
     public function __construct(protected Carbon $defaultTtl)
     {
-        $this->rules = new Collection();
+        $this->rules = new Collection;
     }
 
     public function rules($rules): void
